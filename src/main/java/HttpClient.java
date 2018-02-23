@@ -2,23 +2,23 @@ import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import util.Query;
 
 import java.io.BufferedInputStream;
 import java.io.InputStream;
 
 public class HttpClient {
-    public static String Send(String query) {
+
+    public static String GetResponse(String query) {
         org.apache.http.client.HttpClient httpClient = new DefaultHttpClient();
 
         String response ="";
-
+        HttpResponse httpResponse = null;
         try {
             HttpGet httpGetRequest = new HttpGet(query);
-            HttpResponse httpResponse = httpClient.execute(httpGetRequest);
+            httpResponse = httpClient.execute(httpGetRequest);
 
-            System.out.println("----------------------------------------");
-            System.out.println(httpResponse.getStatusLine());
-            System.out.println("----------------------------------------");
+
 
             HttpEntity entity = httpResponse.getEntity();
 
@@ -40,6 +40,9 @@ public class HttpClient {
             }
         } catch (Exception e) {
             e.printStackTrace();
+            System.out.println("----------------------------------------");
+            System.out.println(httpResponse.getStatusLine());
+            System.out.println("----------------------------------------");
         } finally {
             httpClient.getConnectionManager().shutdown();
         }

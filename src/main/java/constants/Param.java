@@ -6,8 +6,8 @@ public enum Param {
 
     //Always required: DATE_FROM, DATE_TO and one of these: CATEGORY_ID,SELLER_ID,PHRASE_INCLUDE
 
-    DATE_FROM("date-from"),
-    DATE_TO("date-to"),
+    DATE_FROM("date-from"), //YYYY-MM-DD
+    DATE_TO("date-to"), //YYYY-MM-DD
     CATEGORY_ID("category-id"),
     SELLER_ID("seller-id"),
     ITEM_OPTIONS("item-options"),
@@ -17,7 +17,8 @@ public enum Param {
     TYPE_AUCTION("type-acution"),
     STATE_NEW("state-new"),
     PRICE_MIN("price-min"),
-    PRICE_MAX("price-max");
+    PRICE_MAX("price-max"),
+    SPECIAL_TIMESTAMP("timestamp");
 
     private final String param;
 

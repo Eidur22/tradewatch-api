@@ -1,13 +1,11 @@
 package model;
 
+import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-import java.util.List;
-
-public class AuctionLasting {
-
+public class AuctionEnding {
 
     @SerializedName("id")
     @Expose
@@ -62,13 +60,13 @@ public class AuctionLasting {
     public Double costSalePerItem;
     @SerializedName("endDate")
     @Expose
-    public Object endDate;
+    public long endDate;
     @SerializedName("startDate")
     @Expose
     public long startDate;
     @SerializedName("lastTxDate")
     @Expose
-    public long lastTxDate;
+    public Object lastTxDate;
     @SerializedName("durationDays")
     @Expose
     public Integer durationDays;

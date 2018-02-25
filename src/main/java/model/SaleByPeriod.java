@@ -8,19 +8,59 @@ public class SaleByPeriod {
 
     @SerializedName("value")
     @Expose
-    public Double value;
+    private Double value;
     @SerializedName("quantity")
     @Expose
-    public Integer quantity;
+    private Integer quantity;
     @SerializedName("bids")
     @Expose
-    public Integer bids;
+    private Integer bids;
     @SerializedName("avgPrice")
     @Expose
-    public Double avgPrice;
+    private Double avgPrice;
     @SerializedName("date")
     @Expose
-    public Integer date;
+    private long date;
+
+    public Double getValue() {
+        return value;
+    }
+
+    public void setValue(Double value) {
+        this.value = value;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public Integer getBids() {
+        return bids;
+    }
+
+    public void setBids(Integer bids) {
+        this.bids = bids;
+    }
+
+    public Double getAvgPrice() {
+        return avgPrice;
+    }
+
+    public void setAvgPrice(Double avgPrice) {
+        this.avgPrice = avgPrice;
+    }
+
+    public long getDate() {
+        return date;
+    }
+
+    public void setDate(long date) {
+        this.date = date;
+    }
 
     @Override
     public String toString() {

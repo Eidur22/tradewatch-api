@@ -9,19 +9,59 @@ public class SaleByCategory {
 
     @SerializedName("value")
     @Expose
-    public Double value;
+    private Double value;
     @SerializedName("quantity")
     @Expose
-    public Integer quantity;
+    private Integer quantity;
     @SerializedName("bids")
     @Expose
-    public Integer bids;
+    private Integer bids;
     @SerializedName("avgPrice")
     @Expose
-    public Double avgPrice;
+    private Double avgPrice;
     @SerializedName("path")
     @Expose
-    public List<Path> path = null;
+    private List<Path> path = null;
+
+    public Double getValue() {
+        return value;
+    }
+
+    public void setValue(Double value) {
+        this.value = value;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public Integer getBids() {
+        return bids;
+    }
+
+    public void setBids(Integer bids) {
+        this.bids = bids;
+    }
+
+    public Double getAvgPrice() {
+        return avgPrice;
+    }
+
+    public void setAvgPrice(Double avgPrice) {
+        this.avgPrice = avgPrice;
+    }
+
+    public List<Path> getPath() {
+        return path;
+    }
+
+    public void setPath(List<Path> path) {
+        this.path = path;
+    }
 
     @Override
     public String toString() {

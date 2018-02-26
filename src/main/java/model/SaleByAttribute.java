@@ -8,25 +8,81 @@ public class SaleByAttribute {
 
     @SerializedName("value")
     @Expose
-    public Double value;
+    private Double value;
     @SerializedName("quantity")
     @Expose
-    public Integer quantity;
+    private Integer quantity;
     @SerializedName("bids")
     @Expose
-    public Integer bids;
+    private Integer bids;
     @SerializedName("avgPrice")
     @Expose
-    public Double avgPrice;
+    private Double avgPrice;
     @SerializedName("attId")
     @Expose
-    public Integer attId;
+    private Integer attId;
     @SerializedName("attName")
     @Expose
-    public String attName;
+    private String attName;
     @SerializedName("attValue")
     @Expose
-    public String attValue;
+    private String attValue;
+
+    private Double getValue() {
+        return value;
+    }
+
+    private void setValue(Double value) {
+        this.value = value;
+    }
+
+    private Integer getQuantity() {
+        return quantity;
+    }
+
+    private void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    private Integer getBids() {
+        return bids;
+    }
+
+    private void setBids(Integer bids) {
+        this.bids = bids;
+    }
+
+    private Double getAvgPrice() {
+        return avgPrice;
+    }
+
+    private void setAvgPrice(Double avgPrice) {
+        this.avgPrice = avgPrice;
+    }
+
+    private Integer getAttId() {
+        return attId;
+    }
+
+    private void setAttId(Integer attId) {
+        this.attId = attId;
+    }
+
+    private String getAttName() {
+        return attName;
+    }
+
+    private void setAttName(String attName) {
+        this.attName = attName;
+    }
+
+    private String getAttValue() {
+        return attValue;
+    }
+
+    private void setAttValue(String attValue) {
+        this.attValue = attValue;
+    }
 
     @Override
     public String toString() {

@@ -8,79 +8,279 @@ public class CostByPeriod {
 
     @SerializedName("day")
     @Expose
-    public Integer day;
+    private Integer day;
     @SerializedName("countPublish")
     @Expose
-    public Integer countPublish;
+    private Integer countPublish;
     @SerializedName("costPublish")
     @Expose
-    public Double costPublish;
+    private Double costPublish;
     @SerializedName("countPhoto")
     @Expose
-    public Integer countPhoto;
+    private Integer countPhoto;
     @SerializedName("costPhoto")
     @Expose
-    public Double costPhoto;
+    private Double costPhoto;
     @SerializedName("countMinPrice")
     @Expose
-    public Integer countMinPrice;
+    private Integer countMinPrice;
     @SerializedName("costMinPrice")
     @Expose
-    public Double costMinPrice;
+    private Double costMinPrice;
     @SerializedName("countPlanned")
     @Expose
-    public Integer countPlanned;
+    private Integer countPlanned;
     @SerializedName("costPlanned")
     @Expose
-    public Double costPlanned;
+    private Double costPlanned;
     @SerializedName("countDuration14Days")
     @Expose
-    public Integer countDuration14Days;
+    private Integer countDuration14Days;
     @SerializedName("costDuration14Days")
     @Expose
-    public Double costDuration14Days;
+    private Double costDuration14Days;
     @SerializedName("countBold")
     @Expose
-    public Integer countBold;
+    private Integer countBold;
     @SerializedName("costBold")
     @Expose
-    public Double costBold;
+    private Double costBold;
     @SerializedName("countHighlight")
     @Expose
-    public Integer countHighlight;
+    private Integer countHighlight;
     @SerializedName("costHighlight")
     @Expose
-    public Double costHighlight;
+    private Double costHighlight;
     @SerializedName("countAward")
     @Expose
-    public Integer countAward;
+    private Integer countAward;
     @SerializedName("costAward")
     @Expose
-    public Double costAward;
+    private Double costAward;
     @SerializedName("countDivPage")
     @Expose
-    public Integer countDivPage;
+    private Integer countDivPage;
     @SerializedName("costDivPage")
     @Expose
-    public Double costDivPage;
+    private Double costDivPage;
     @SerializedName("soldQuantity")
     @Expose
-    public Integer soldQuantity;
+    private Integer soldQuantity;
     @SerializedName("bidCount")
     @Expose
-    public Integer bidCount;
+    private Integer bidCount;
     @SerializedName("soldValue")
     @Expose
-    public Double soldValue;
+    private Double soldValue;
     @SerializedName("costSale")
     @Expose
-    public Double costSale;
+    private Double costSale;
     @SerializedName("totalPublishCost")
     @Expose
-    public Double totalPublishCost;
+    private Double totalPublishCost;
     @SerializedName("totalCost")
     @Expose
-    public Double totalCost;
+    private Double totalCost;
+
+    public Integer getDay() {
+        return day;
+    }
+
+    public void setDay(Integer day) {
+        this.day = day;
+    }
+
+    public Integer getCountPublish() {
+        return countPublish;
+    }
+
+    public void setCountPublish(Integer countPublish) {
+        this.countPublish = countPublish;
+    }
+
+    public Double getCostPublish() {
+        return costPublish;
+    }
+
+    public void setCostPublish(Double costPublish) {
+        this.costPublish = costPublish;
+    }
+
+    public Integer getCountPhoto() {
+        return countPhoto;
+    }
+
+    public void setCountPhoto(Integer countPhoto) {
+        this.countPhoto = countPhoto;
+    }
+
+    public Double getCostPhoto() {
+        return costPhoto;
+    }
+
+    public void setCostPhoto(Double costPhoto) {
+        this.costPhoto = costPhoto;
+    }
+
+    public Integer getCountMinPrice() {
+        return countMinPrice;
+    }
+
+    public void setCountMinPrice(Integer countMinPrice) {
+        this.countMinPrice = countMinPrice;
+    }
+
+    public Double getCostMinPrice() {
+        return costMinPrice;
+    }
+
+    public void setCostMinPrice(Double costMinPrice) {
+        this.costMinPrice = costMinPrice;
+    }
+
+    public Integer getCountPlanned() {
+        return countPlanned;
+    }
+
+    public void setCountPlanned(Integer countPlanned) {
+        this.countPlanned = countPlanned;
+    }
+
+    public Double getCostPlanned() {
+        return costPlanned;
+    }
+
+    public void setCostPlanned(Double costPlanned) {
+        this.costPlanned = costPlanned;
+    }
+
+    public Integer getCountDuration14Days() {
+        return countDuration14Days;
+    }
+
+    public void setCountDuration14Days(Integer countDuration14Days) {
+        this.countDuration14Days = countDuration14Days;
+    }
+
+    public Double getCostDuration14Days() {
+        return costDuration14Days;
+    }
+
+    public void setCostDuration14Days(Double costDuration14Days) {
+        this.costDuration14Days = costDuration14Days;
+    }
+
+    public Integer getCountBold() {
+        return countBold;
+    }
+
+    public void setCountBold(Integer countBold) {
+        this.countBold = countBold;
+    }
+
+    public Double getCostBold() {
+        return costBold;
+    }
+
+    public void setCostBold(Double costBold) {
+        this.costBold = costBold;
+    }
+
+    public Integer getCountHighlight() {
+        return countHighlight;
+    }
+
+    public void setCountHighlight(Integer countHighlight) {
+        this.countHighlight = countHighlight;
+    }
+
+    public Double getCostHighlight() {
+        return costHighlight;
+    }
+
+    public void setCostHighlight(Double costHighlight) {
+        this.costHighlight = costHighlight;
+    }
+
+    public Integer getCountAward() {
+        return countAward;
+    }
+
+    public void setCountAward(Integer countAward) {
+        this.countAward = countAward;
+    }
+
+    public Double getCostAward() {
+        return costAward;
+    }
+
+    public void setCostAward(Double costAward) {
+        this.costAward = costAward;
+    }
+
+    public Integer getCountDivPage() {
+        return countDivPage;
+    }
+
+    public void setCountDivPage(Integer countDivPage) {
+        this.countDivPage = countDivPage;
+    }
+
+    public Double getCostDivPage() {
+        return costDivPage;
+    }
+
+    public void setCostDivPage(Double costDivPage) {
+        this.costDivPage = costDivPage;
+    }
+
+    public Integer getSoldQuantity() {
+        return soldQuantity;
+    }
+
+    public void setSoldQuantity(Integer soldQuantity) {
+        this.soldQuantity = soldQuantity;
+    }
+
+    public Integer getBidCount() {
+        return bidCount;
+    }
+
+    public void setBidCount(Integer bidCount) {
+        this.bidCount = bidCount;
+    }
+
+    public Double getSoldValue() {
+        return soldValue;
+    }
+
+    public void setSoldValue(Double soldValue) {
+        this.soldValue = soldValue;
+    }
+
+    public Double getCostSale() {
+        return costSale;
+    }
+
+    public void setCostSale(Double costSale) {
+        this.costSale = costSale;
+    }
+
+    public Double getTotalPublishCost() {
+        return totalPublishCost;
+    }
+
+    public void setTotalPublishCost(Double totalPublishCost) {
+        this.totalPublishCost = totalPublishCost;
+    }
+
+    public Double getTotalCost() {
+        return totalCost;
+    }
+
+    public void setTotalCost(Double totalCost) {
+        this.totalCost = totalCost;
+    }
 
     @Override
     public String toString() {

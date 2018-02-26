@@ -17,9 +17,9 @@ public class HttpClient {
         try {
             HttpGet httpGetRequest = new HttpGet(query);
             httpResponse = httpClient.execute(httpGetRequest);
-
-
-
+            System.out.println("----------------------------------------");
+            System.out.println(httpResponse.getStatusLine());
+            System.out.println("----------------------------------------");
             HttpEntity entity = httpResponse.getEntity();
 
             byte[] buffer = new byte[1024];
@@ -40,9 +40,6 @@ public class HttpClient {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("----------------------------------------");
-            System.out.println(httpResponse.getStatusLine());
-            System.out.println("----------------------------------------");
         } finally {
             httpClient.getConnectionManager().shutdown();
         }

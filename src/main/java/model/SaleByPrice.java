@@ -8,22 +8,70 @@ public class SaleByPrice {
 
     @SerializedName("value")
     @Expose
-    public Double value;
+    private Double value;
     @SerializedName("quantity")
     @Expose
-    public Integer quantity;
+    private Integer quantity;
     @SerializedName("bids")
     @Expose
-    public Integer bids;
+    private Integer bids;
     @SerializedName("avgPrice")
     @Expose
-    public Double avgPrice;
+    private Double avgPrice;
     @SerializedName("priceLo")
     @Expose
-    public Double priceLo;
+    private Double priceLo;
     @SerializedName("priceHi")
     @Expose
-    public Double priceHi;
+    private Double priceHi;
+
+    public Double getValue() {
+        return value;
+    }
+
+    public void setValue(Double value) {
+        this.value = value;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public Integer getBids() {
+        return bids;
+    }
+
+    public void setBids(Integer bids) {
+        this.bids = bids;
+    }
+
+    public Double getAvgPrice() {
+        return avgPrice;
+    }
+
+    public void setAvgPrice(Double avgPrice) {
+        this.avgPrice = avgPrice;
+    }
+
+    public Double getPriceLo() {
+        return priceLo;
+    }
+
+    public void setPriceLo(Double priceLo) {
+        this.priceLo = priceLo;
+    }
+
+    public Double getPriceHi() {
+        return priceHi;
+    }
+
+    public void setPriceHi(Double priceHi) {
+        this.priceHi = priceHi;
+    }
 
     @Override
     public String toString() {

@@ -8,16 +8,16 @@ public enum Param {
 
     DATE_FROM("date-from"), //YYYY-MM-DD
     DATE_TO("date-to"), //YYYY-MM-DD
-    CATEGORY_ID("category-id"),
-    SELLER_ID("seller-id"),
-    ITEM_OPTIONS("item-options"),
-    ITEM_OPTIONS_MASK("item-options-mask"),
-    PHRASE_INCLUDE("phrase-include"),
-    PHRASE_EXCLUDE("phrase-exclude"),
-    TYPE_AUCTION("type-acution"),
-    STATE_NEW("state-new"),
-    PRICE_MIN("price-min"),
-    PRICE_MAX("price-max"),
+    CATEGORY_ID("category-id"),//Integer
+    SELLER_ID("seller-id"),//integer
+    ITEM_OPTIONS("item-options"),//integer pole it-options @Allegro WebAPI
+    ITEM_OPTIONS_MASK("item-options-mask"),//integer
+    PHRASE_INCLUDE("phrase-include"),//String
+    PHRASE_EXCLUDE("phrase-exclude"),//String
+    TYPE_AUCTION("type-acution"),//bool true-only auctions, false-onlybuy now, default(empty)-all
+    STATE_NEW("state-new"),//true - new, false-used, default(empty)-all
+    PRICE_MIN("price-min"),//double
+    PRICE_MAX("price-max"),//double
     SPECIAL_TIMESTAMP("timestamp");
 
     private final String param;

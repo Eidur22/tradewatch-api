@@ -8,6 +8,24 @@
     <artifactId>tradewatch-api</artifactId>
     <version>0.0.1</version>
 
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Tradewatch API for Java usage</description>
+    <url>https://github.com/eidur22/tradewatch-api</url>
+
+    <developers>
+        <developer>
+            <name>Marcin Jerzak</name>
+            <email>jerzakm@gmail.com</email>
+            <url>https://github.com/eidur22</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/eidur22/tradewatch-api.git</connection>
+        <developerConnection>scm:git:ssh://github.com/eidur22/tradewatch-api.git</developerConnection>
+        <url>http://github.com/eidur22/tradewatch-api</url>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>

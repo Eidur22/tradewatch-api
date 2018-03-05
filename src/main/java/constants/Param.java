@@ -18,7 +18,8 @@ public enum Param {
     STATE_NEW("state-new"),//true - new, false-used, default(empty)-all
     PRICE_MIN("price-min"),//double
     PRICE_MAX("price-max"),//double
-    SPECIAL_TIMESTAMP("timestamp");
+    SPECIAL_TIMESTAMP("timestamp"),
+    SPECIAL_ITEM_GROUP_QUALIFY("item-group-qualify");//ID,NAME,NAME_AND_PROMOTION - how to group offers
 
     private final String param;
 

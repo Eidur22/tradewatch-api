@@ -55,6 +55,12 @@ public class TradewatchClient {
         return list;
     }
 
+    public List<SaleByItemGroup> doGetSaleByItemGroup(Query query){
+        query.setMethod(Method.SALE_BY_ITEM_GROUP);
+        List<SaleByItemGroup> list = this.gson.fromJson(getJson(query), new TypeToken<List<SaleByItemGroup>>(){}.getType());
+        return list;
+    }
+
     public List<SaleByCategory> doGetSaleByCategory(Query query){
         query.setMethod(Method.SALE_BY_CATEGORY);
         List<SaleByCategory> list = this.gson.fromJson(getJson(query), new TypeToken<List<SaleByCategory>>(){}.getType());
@@ -74,7 +80,7 @@ public class TradewatchClient {
     }
 
     public List<SaleByHour> doGetSaleByHour(Query query){
-        query.setMethod(Method.SALE_BY_PRICE);
+        query.setMethod(Method.SALE_BY_HOUR);
         List<SaleByHour> list = this.gson.fromJson(getJson(query), new TypeToken<List<SaleByHour>>(){}.getType());
         return list;
     }
@@ -96,8 +102,9 @@ public class TradewatchClient {
         query.setMethod(Method.ACCOUNT_REQUEST_STATS);
         AccountStats response = this.gson.fromJson(getJson(query),new TypeToken<AccountStats>(){}.getType());
         return response;
-
     }
+
+
 
     public void jsonGetter(Query query){
         System.out.println(HttpClient.GetResponse(query.build(this.buildAuth())));

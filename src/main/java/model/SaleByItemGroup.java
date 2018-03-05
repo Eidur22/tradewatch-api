@@ -21,7 +21,7 @@ public class SaleByItemGroup {
     private Double avgPrice;
     @SerializedName("ids")
     @Expose
-    private List<Integer> ids = null;
+    private List<Long> ids = null;
     @SerializedName("name")
     @Expose
     private String name;
@@ -58,11 +58,11 @@ public class SaleByItemGroup {
         this.avgPrice = avgPrice;
     }
 
-    public List<Integer> getIds() {
+    public List<Long> getIds() {
         return ids;
     }
 
-    public void setIds(List<Integer> ids) {
+    public void setIds(List<Long> ids) {
         this.ids = ids;
     }
 

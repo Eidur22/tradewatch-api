@@ -1,11 +1,10 @@
-package model;
+package com.github.jerzakm.model;
 
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-public class SaleByCategory {
+public class SaleBySeller {
 
     @SerializedName("value")
     @Expose
@@ -19,9 +18,12 @@ public class SaleByCategory {
     @SerializedName("avgPrice")
     @Expose
     private Double avgPrice;
-    @SerializedName("path")
+    @SerializedName("id")
     @Expose
-    private List<Path> path = null;
+    private Integer id;
+    @SerializedName("name")
+    @Expose
+    private String name;
 
     public Double getValue() {
         return value;
@@ -55,17 +57,25 @@ public class SaleByCategory {
         this.avgPrice = avgPrice;
     }
 
-    public List<Path> getPath() {
-        return path;
+    public Integer getId() {
+        return id;
     }
 
-    public void setPath(List<Path> path) {
-        this.path = path;
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("value", value).append("quantity", quantity).append("bids", bids).append("avgPrice", avgPrice).append("path", path).toString();
+        return new ToStringBuilder(this).append("value", value).append("quantity", quantity).append("bids", bids).append("avgPrice", avgPrice).append("id", id).append("name", name).toString();
     }
 
 }

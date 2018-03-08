@@ -1,10 +1,10 @@
-package model;
+package com.github.jerzakm.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-public class SaleByPeriod {
+public class SaleByPrice {
 
     @SerializedName("value")
     @Expose
@@ -18,9 +18,12 @@ public class SaleByPeriod {
     @SerializedName("avgPrice")
     @Expose
     private Double avgPrice;
-    @SerializedName("date")
+    @SerializedName("priceLo")
     @Expose
-    private long date;
+    private Double priceLo;
+    @SerializedName("priceHi")
+    @Expose
+    private Double priceHi;
 
     public Double getValue() {
         return value;
@@ -54,17 +57,25 @@ public class SaleByPeriod {
         this.avgPrice = avgPrice;
     }
 
-    public long getDate() {
-        return date;
+    public Double getPriceLo() {
+        return priceLo;
     }
 
-    public void setDate(long date) {
-        this.date = date;
+    public void setPriceLo(Double priceLo) {
+        this.priceLo = priceLo;
+    }
+
+    public Double getPriceHi() {
+        return priceHi;
+    }
+
+    public void setPriceHi(Double priceHi) {
+        this.priceHi = priceHi;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("value", value).append("quantity", quantity).append("bids", bids).append("avgPrice", avgPrice).append("date", date).toString();
+        return new ToStringBuilder(this).append("value", value).append("quantity", quantity).append("bids", bids).append("avgPrice", avgPrice).append("priceLo", priceLo).append("priceHi", priceHi).toString();
     }
 
 }

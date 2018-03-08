@@ -1,4 +1,4 @@
-package constants;
+package com.github.jerzakm.constants;
 
 public enum Method {
 

@@ -1,10 +1,11 @@
-package model;
+package com.github.jerzakm.model;
 
+import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-public class SaleByPrice {
+public class SaleByCategory {
 
     @SerializedName("value")
     @Expose
@@ -18,12 +19,9 @@ public class SaleByPrice {
     @SerializedName("avgPrice")
     @Expose
     private Double avgPrice;
-    @SerializedName("priceLo")
+    @SerializedName("path")
     @Expose
-    private Double priceLo;
-    @SerializedName("priceHi")
-    @Expose
-    private Double priceHi;
+    private List<Path> path = null;
 
     public Double getValue() {
         return value;
@@ -57,25 +55,17 @@ public class SaleByPrice {
         this.avgPrice = avgPrice;
     }
 
-    public Double getPriceLo() {
-        return priceLo;
+    public List<Path> getPath() {
+        return path;
     }
 
-    public void setPriceLo(Double priceLo) {
-        this.priceLo = priceLo;
-    }
-
-    public Double getPriceHi() {
-        return priceHi;
-    }
-
-    public void setPriceHi(Double priceHi) {
-        this.priceHi = priceHi;
+    public void setPath(List<Path> path) {
+        this.path = path;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("value", value).append("quantity", quantity).append("bids", bids).append("avgPrice", avgPrice).append("priceLo", priceLo).append("priceHi", priceHi).toString();
+        return new ToStringBuilder(this).append("value", value).append("quantity", quantity).append("bids", bids).append("avgPrice", avgPrice).append("path", path).toString();
     }
 
 }

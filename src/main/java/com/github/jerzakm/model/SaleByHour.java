@@ -1,10 +1,10 @@
-package model;
+package com.github.jerzakm.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-public class SaleByKeyword {
+public class SaleByHour {
 
     @SerializedName("value")
     @Expose
@@ -18,9 +18,9 @@ public class SaleByKeyword {
     @SerializedName("avgPrice")
     @Expose
     private Double avgPrice;
-    @SerializedName("name")
+    @SerializedName("hour")
     @Expose
-    private String name;
+    private Integer hour;
 
     public Double getValue() {
         return value;
@@ -54,17 +54,17 @@ public class SaleByKeyword {
         this.avgPrice = avgPrice;
     }
 
-    public String getName() {
-        return name;
+    public Integer getHour() {
+        return hour;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setHour(Integer hour) {
+        this.hour = hour;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("value", value).append("quantity", quantity).append("bids", bids).append("avgPrice", avgPrice).append("name", name).toString();
+        return new ToStringBuilder(this).append("value", value).append("quantity", quantity).append("bids", bids).append("avgPrice", avgPrice).append("hour", hour).toString();
     }
 
 }

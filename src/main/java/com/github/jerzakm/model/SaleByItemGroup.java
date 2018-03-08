@@ -1,10 +1,11 @@
-package model;
+package com.github.jerzakm.model;
 
+import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-public class SaleByHour {
+public class SaleByItemGroup {
 
     @SerializedName("value")
     @Expose
@@ -18,9 +19,12 @@ public class SaleByHour {
     @SerializedName("avgPrice")
     @Expose
     private Double avgPrice;
-    @SerializedName("hour")
+    @SerializedName("ids")
     @Expose
-    private Integer hour;
+    private List<Long> ids = null;
+    @SerializedName("name")
+    @Expose
+    private String name;
 
     public Double getValue() {
         return value;
@@ -54,17 +58,24 @@ public class SaleByHour {
         this.avgPrice = avgPrice;
     }
 
-    public Integer getHour() {
-        return hour;
+    public List<Long> getIds() {
+        return ids;
     }
 
-    public void setHour(Integer hour) {
-        this.hour = hour;
+    public void setIds(List<Long> ids) {
+        this.ids = ids;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("value", value).append("quantity", quantity).append("bids", bids).append("avgPrice", avgPrice).append("hour", hour).toString();
+        return new ToStringBuilder(this).append("value", value).append("quantity", quantity).append("bids", bids).append("avgPrice", avgPrice).append("ids", ids).append("name", name).toString();
     }
-
 }

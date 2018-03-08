@@ -1,11 +1,13 @@
-package model;
+package com.github.jerzakm.model;
 
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-public class AuctionEnding {
+import java.util.List;
+
+public class AuctionLasting {
+
 
     @SerializedName("id")
     @Expose
@@ -60,13 +62,13 @@ public class AuctionEnding {
     private Double costSalePerItem;
     @SerializedName("endDate")
     @Expose
-    public long endDate;
+    private Object endDate;
     @SerializedName("startDate")
     @Expose
     private long startDate;
     @SerializedName("lastTxDate")
     @Expose
-    private Object lastTxDate;
+    private long lastTxDate;
     @SerializedName("durationDays")
     @Expose
     private Integer durationDays;
@@ -258,11 +260,11 @@ public class AuctionEnding {
         this.costSalePerItem = costSalePerItem;
     }
 
-    public long getEndDate() {
+    public Object getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(long endDate) {
+    public void setEndDate(Object endDate) {
         this.endDate = endDate;
     }
 
@@ -274,11 +276,11 @@ public class AuctionEnding {
         this.startDate = startDate;
     }
 
-    public Object getLastTxDate() {
+    public long getLastTxDate() {
         return lastTxDate;
     }
 
-    public void setLastTxDate(Object lastTxDate) {
+    public void setLastTxDate(long lastTxDate) {
         this.lastTxDate = lastTxDate;
     }
 

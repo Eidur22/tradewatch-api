@@ -1,8 +1,10 @@
+package com.github.jerzakm;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-import util.Query;
+import com.github.jerzakm.util.Query;
 
 import java.io.BufferedInputStream;
 import java.io.InputStream;

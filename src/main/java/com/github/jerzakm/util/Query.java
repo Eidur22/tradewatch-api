@@ -1,9 +1,9 @@
-package util;
+package com.github.jerzakm.util;
 
 
-import constants.Constant;
-import constants.Method;
-import constants.Param;
+import com.github.jerzakm.constants.Constant;
+import com.github.jerzakm.constants.Method;
+import com.github.jerzakm.constants.Param;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package constants;
+package com.github.jerzakm.constants;
 
 public class Constant {
     private static final String tradewatchURL = "http://tradewatch.pl/api/";

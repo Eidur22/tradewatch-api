@@ -1,9 +1,11 @@
+package com.github.jerzakm;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import constants.Method;
-import model.*;
-import util.HashGen;
-import util.Query;
+import com.github.jerzakm.constants.Method;
+import com.github.jerzakm.model.*;
+import com.github.jerzakm.util.HashGen;
+import com.github.jerzakm.util.Query;
 
 import java.util.List;
 
@@ -11,6 +13,7 @@ public class TradewatchClient {
     private String login;
     private String password;
     private Gson gson;
+    private boolean persistentReplies;
 
     public TradewatchClient(String login, String password) {
         this.login = login;
@@ -104,8 +107,7 @@ public class TradewatchClient {
         return response;
     }
 
-
-
+    //debug method used for getting raw json
     public void jsonGetter(Query query){
         System.out.println(HttpClient.GetResponse(query.build(this.buildAuth())));
     }
